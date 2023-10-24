@@ -4,6 +4,24 @@
 
 from pathlib import Path
 
+def inputvalue():
+    #input qty 
+    while True:
+        try: 
+             qty = int(input('Enter qty :'))
+             break
+        except ValueError as e:
+            print(e)
+    #input weight           
+    while True:
+        try: 
+             kg = float(input('Enter weight: '))
+             break
+        except ValueError as e:
+            print(e)
+
+    return qty, kg    
+
 #Create a dirrectory
 path_to_folder = Path('groserycalc/data')
 path_to_folder.mkdir(exist_ok=True) #Checking if dir is exist
@@ -22,14 +40,16 @@ if  what_to_do == '1':
     #open file to append 
     with open(path_to_file, 'a') as f:
         while True:
-            x = int(input('Enter qty :'))
-            y = float(input('Enter weight: '))
+            x, y = inputvalue()
+            
             if x == 0:
                 break
             f.write(str(x))
             f.write('|')
             f.write(str(y))
             f.write('\n')
+ 
+            
 
 else:
     with open(path_to_file) as f:
