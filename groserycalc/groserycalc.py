@@ -1,7 +1,11 @@
+#An application that counts apple boxes and total weight. 
+#Those. the user enters the number of boxes and weight. and so on until 0 is entered. 
+#After this, it will be possible to get the total number of boxes and total weight
+
 from pathlib import Path
 
 #Create a dirrectory
-path_to_folder = Path('data')
+path_to_folder = Path('groserycalc/data')
 path_to_folder.mkdir(exist_ok=True) #Checking if dir is exist
 
 #Create log file
