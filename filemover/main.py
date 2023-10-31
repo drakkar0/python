@@ -4,7 +4,7 @@ from datetime import date, timedelta
 
 #скрипт для автоматической распаковки архива выгруженного сервиса Canva
 
-start_date = date(2023,10,29) #страрт -1день
+start_date = date(2023,10,29)
 
 video_path = Path('D:/@START-UP/tenbox/')
 delta = 0

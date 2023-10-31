@@ -23,8 +23,8 @@ if not pathtodownload.exists():
 
 #настройки
 path_to_key = 'D:/GIT/python/downloader/' #папка с сектретным файлом
-secret_key = '****************' #Секретный файл
-folder_id = '*****************'  # ID папки на Google Диске, которую вы хотите скачать
+secret_key = '--------------' #Секретный файл
+folder_id = '---------------'  # ID папки на Google Диске, которую вы хотите скачать
 
 
 # Укажите путь к файлу JSON вашего служебного аккаунта и область доступа
@@ -69,7 +69,7 @@ for file in result:
 
 #качаем файлы
 for k,v in dict_of_folder.items():
-    print('Start to download')
+    print('Start to down load')
     #создаем папку если такая не существует
     newfolderpath_name = Path(pathtodownload.joinpath(k))
     if not newfolderpath_name.exists():
