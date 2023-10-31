@@ -23,8 +23,8 @@ if not pathtodownload.exists():
 
 #настройки
 path_to_key = 'D:/GIT/python/downloader/' #папка с сектретным файлом
-secret_key = 'peak-essence-291819-560cc749a978.json' #Секретный файл
-folder_id = '1HTL9h_EXCmh43ES8K9q2EbF8a4MbK1ZR'  # ID папки на Google Диске, которую вы хотите скачать
+secret_key = '****************' #Секретный файл
+folder_id = '*****************'  # ID папки на Google Диске, которую вы хотите скачать
 
 
 # Укажите путь к файлу JSON вашего служебного аккаунта и область доступа
